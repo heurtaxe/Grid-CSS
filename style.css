@@ -1,5 +1,5 @@
 body { 
-  font-family: segoe-ui_normal,Segoe UI,Segoe,Segoe WP,Helvetica Neue,Helvetica,sans-serif;
+  font-family: "courier";
   display: grid;
   grid-template-areas: 
     "header header header"
@@ -12,6 +12,9 @@ body {
   margin: 10px;  
 }
 
+p {
+color: white;
+  }
 header {
   background: #F7EBEC;
   grid-area: header;
@@ -35,4 +38,29 @@ footer {
 
 header, nav, section, aside, footer {
   padding: 5px;
+}
+
+@media only screen and (min-width: 640px) {
+ p {
+ color: black;
+ font-family: "century gothic";
+ }
+footer {
+ background: #d1ebf2;
+ }
+}
+@media only screen and (min-width: 768px) {
+ header {
+ background: #d1dcf2;
+ }
+}
+@media only screen and (min-width: 1024px) {
+ nav {
+ background: #d5d1f2;
+ }
+}
+@media only screen and (min-width: 1280px) {
+ section {
+ background: #e6d1f2;
+ }
 }
